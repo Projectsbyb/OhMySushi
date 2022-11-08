@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🍱 Oh My Sushi! - Amsterdam</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="images/ohmysushilogoicon.png"
+      type="image/icon type"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/ohmysushilogo2.png" alt="Oh  my sushi logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="#section2">Menu</a></li>
+            <li><a href="">Reviews</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Info</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <p>Welkom op de officiële <br />website van Oh My Sushi!</p>
+        <a href="#section2" class="hero-btn">Menu</a>
+      </div>
+    </section>
+
+    <section class="info">
+      <h1>Info</h1>
+
+      <div class="row">
+        <div class="info-col">
+          <h3>Voorwaarden</h3>
+          <p class="info-p">
+            Wij, van de Oh My Sushi familie, hebben een aantal waarden hoog in
+            het vaandel staan, zoals:<br />-al onze vis is elke dag vers en al
+            onze producten zijn 100% halal.<br />
+            -al onze sushi wordt op bestelling gemaakt en speciale verzoeken
+            worden altijd gehonoreerd<br />
+            -al onze liefde gaat in al onze producten.
+          </p>
+        </div>
+        <div class="info-col">
+          <h3>Spaarkaart</h3>
+          <p class="info-p">
+            Bij elke bestede € 15,00 spaart u 1 punt. Bij 25 punten krijgt u 20%
+            korting!
+          </p>
+        </div>
+        <div class="info-col">
+          <h3>Bestelling</h3>
+          <p class="info-p">
+            Bij een bestelling onder €50 <br />- 2x eetstokjes - 1x sojasaus
+            (30ml)<br />
+            - 1x wasabi (2,5g)<br />
+            Bij een bestelling tussen €50-100<br />
+            - 2x eetstokjes - 2x sojasaus (30ml) <br />- 2x wasabi (2.5g)
+            <br />Bij een bestelling boven €100<br />
+            - 4x eetstokjes - 4x sojasaus (30ml) <br />- 4x wasabi (2,5g) - 1x
+            gember (50ml)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!------JavaScript for Toggle Menu------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <div id="section2" class="card">
+      <p class="menu-place">Menu</p>
+    </div>
+    <div class="menu-gallery">
+      <img src="images/krokant_gefrituurde-sushi-1.jpg" />
+      <img src="images/sushiboxtest.jpg" />
+      <img src="images/special-rolls.jpg" />
+      <img src="images/sushi-handrolls2.jpg" />
+      <img src="images/sushi-pokebowl-2.jpeg" />
+      <img src="images/sushi-sashimi3.jpg" />
+      <img src="images/sushi-sidedishes.jpg" />
+      <img src="images/sushi-drinks.jpg" />
+      <img src="images/Hosomaki-Sushi-Rolls.webp" />
+      <img src="images/sushi-extras2.jpg" />
+    </div>
+  </body>
+</html>
